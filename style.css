@@ -3,9 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     /* border: 1px solid blue; */
-
     }
-
 
 body {
     background-image: url("assets/body-video.mp4");
@@ -17,9 +15,8 @@ body {
     a{
       cursor: url("assets/NL-2-open.svg"), pointer;
        }
-      
-   
-/* the main container */
+       
+/* the main card styling*/
 
 /* a rersponsive grid for mobile*/
 /*this code will be used for when the screen size is 1200 pixels or higher (desktop) */
@@ -42,7 +39,7 @@ body {
     }
    .card{
      display: grid;
-     width: 70%;
+     width: 60%;
      /* centers the card */
      margin-left:auto;
      margin-right:auto;
@@ -115,12 +112,6 @@ svg{
   animation-duration: 3s;
 }
 
-
-.logo-container{
-  /* width: 50%; */
-  /* margin-top: 130px; */
-  /* margin-left: 240px; */
-}
 .favicon {
   fill:rgb(0, 34, 255);
 }
