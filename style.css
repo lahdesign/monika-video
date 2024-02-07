@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+
+    }
+
+
+body {
+    background-image: url('assets/Body-video-w-pause.mp4');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: url('assets/NL-CC-closed.svg'), auto;	
+    }
+
+    a{
+      cursor: url("assets/NL-2-open.svg"), pointer;
+       }
+      
+   
+/* the main container */
+
+/* a rersponsive grid for mobile*/
+/*this code will be used for when the screen size is 1200 pixels or less */
+
+@media screen and (max-width: 1200px) {
+ body{
+  transform-origin: top;
+  transform: scale(1.2);
+  margin:0 auto;
+ }
+
+  }
+
+
+.name{
+  display: grid;
+  position: relative;
+  margin: left 60px;
+  padding: 10px
+
+}
+
+.secondary{
+  display: grid;
+  position: relative;
+  margin: left 70px;px;
+
+}
+
+.icon-container{
+
+  width:40%;
+  margin: 15 auto;
+  display:grid;
+  position: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "a b c";
+  grid-gap: 15px;
+  margin-left: 135;
+}
+
+/* .circle{
+  background-image: url("/assets/circle.svg");
+  grid-area: a;
+} */
+
+
+h3{
+  font-family: 'Spline Sans Mono', monospace;
+  margin-bottom: 0px;
+  font-size: large;
+  font-weight: 700;
+  margin-top: 10;
+  margin-left: 25;
+  white-space: nowrap;
+}
+
+h4{
+  font-family: 'Spline Sans Mono', monospace;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15;
+  position: center;
+  margin-top: 10;
+  margin-left: 73;
+  white-space: nowrap;
+} 
+
+h5{
+  font-family: 'Spline Sans Mono', monospace;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15;
+  position: center;
+  margin-top: 10;
+  margin-left: 70;
+  white-space: nowrap;
+} 
+
+/* svg styling */
+/* .st0{display:none;} */
+.st1{display:inline;}
+
+svg{
+  fill:rgb(0, 0, 0);
+  
+}
+
+#icon-fill{
+  fill:none;
+}
+
+
+
+.svg-interaction:hover{
+  fill:rgb(0, 34, 255);
+  animation:pulse; 
+  animation-duration: 2s;
+}
+
+.content {
+  width: 50%;
+}
+.logo-container{
+  width: 50%;
+  margin-top: 130;
+  margin-left: 240;
+}
+.favicon {
+  fill:rgb(0, 34, 255);
+}
+
+
+
+
