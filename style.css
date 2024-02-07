@@ -8,7 +8,7 @@
 
 
 body {
-    background-image: url('assets/Body-video-w-pause.mp4');
+    background-image: url("assets/body-video.mp4");
     background-repeat: no-repeat;
     background-size: cover;
     cursor: url('assets/NL-CC-closed.svg'), auto;	
