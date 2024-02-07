@@ -22,52 +22,45 @@ body {
 /* the main container */
 
 /* a rersponsive grid for mobile*/
-/*this code will be used for when the screen size is 1200 pixels or less */
+/*this code will be used for when the screen size is 1200 pixels or higher (desktop) */
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
  body{
-  transform-origin: top;
-  transform: scale(1.2);
-  margin:0 auto;
+  margin: 0 auto;
  }
-
+.card{
+  display: grid;
+  width: 40%;
+  margin-left:40px;
+  margin-top:80px;
+}
   }
+/* this is the code that will be used when the document is 1200px or less (mobile) */
+  @media screen and (max-width: 1200px) {
+    body{
+     margin: 0 auto;
+    }
+   .card{
+     display: grid;
+     width: 70%;
+     /* centers the card */
+     margin-left:auto;
+     margin-right:auto;
+     margin-top:30px;
+   }
+     }
 
-
-.name{
-  display: grid;
-  position: relative;
-  margin: left 60px;
-  padding: 10px
-
-}
-
-.secondary{
-  display: grid;
-  position: relative;
-  margin: left 70px;px;
-
-}
-
-.icon-container{
-
-  width:40%;
-  margin: 15 auto;
+.icon-wrapper{
+  width:60%;
+  margin: 30px;
   display:grid;
   position: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 
-  "a b c";
-  grid-gap: 15px;
-  margin-left: 135;
+  "a b";
+  grid-gap: 30px;
 }
-
-/* .circle{
-  background-image: url("/assets/circle.svg");
-  grid-area: a;
-} */
-
 
 h3{
   font-family: 'Spline Sans Mono', monospace;
@@ -85,7 +78,7 @@ h4{
   padding-top: 0px;
   font-weight: 400;
   font-style: italic;
-  font-size: 15;
+  font-size: 15px;
   position: center;
   margin-top: 10;
   margin-left: 73;
@@ -98,15 +91,14 @@ h5{
   padding-top: 0px;
   font-weight: 400;
   font-style: italic;
-  font-size: 15;
+  font-size: 15px;
   position: center;
-  margin-top: 10;
-  margin-left: 70;
+  margin-top: 10px;
+  margin-left: 70px;
   white-space: nowrap;
 } 
 
 /* svg styling */
-/* .st0{display:none;} */
 .st1{display:inline;}
 
 svg{
@@ -117,22 +109,17 @@ svg{
 #icon-fill{
   fill:none;
 }
-
-
-
 .svg-interaction:hover{
   fill:rgb(0, 34, 255);
   animation:pulse; 
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 
-.content {
-  width: 50%;
-}
+
 .logo-container{
-  width: 50%;
-  margin-top: 130;
-  margin-left: 240;
+  /* width: 50%; */
+  /* margin-top: 130px; */
+  /* margin-left: 240px; */
 }
 .favicon {
   fill:rgb(0, 34, 255);
